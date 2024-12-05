@@ -42,7 +42,7 @@ export default function HomeHero() {
                 Премиум-услуга по комплектации интерьера с консьерж-сервисом от
                 компании Mebel.tours
               </p>
-              <div className="max-w-[400px] xl:max-w-none flex flex-col lg:flex-row items-center gap-2.5 3xl:gap-5">
+              <div className="max-w-[400px] xl:max-w-none flex flex-col lg:flex-row items-center gap-2.5 3xl:gap-5 pb-5">
                 <Button
                   variant="red"
                   className="w-full h-[52px] 3xl:h-[73px] flex items-center justify-center gap-4 px-5"
