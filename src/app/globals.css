@@ -1,0 +1,268 @@
+/* Font Manrope */
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-Medium.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-Light.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-Bold.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-Regular.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/manrope/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Unbounded */
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-Black.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-Bold.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-Medium.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-Light.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-Regular.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/assets/fonts/unbounded/Unbounded-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/unbounded/Unbounded-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-manrope transition-all duration-300;
+  }
+
+  section {
+    @apply pb-[60px] sm:pb-20 lg:pb-[120px] 3xl:pb-40;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-brand-dark font-unbounded;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium text-brand-dark font-unbounded;
+  }
+
+  h1 {
+    @apply text-[40px] sm:text-[64px] xl:text-[82px] 3xl:text-[120px] leading-10 sm:leading-[64px] xl:leading-[82px] 3xl:leading-[120px];
+  }
+
+  h2 {
+    @apply text-4xl sm:text-5xl xl:text-[55px] 3xl:text-[80px] leading-9 sm:leading-[48px] xl:leading-[55px] 3xl:leading-[80px];
+  }
+
+  h3 {
+    @apply text-2xl sm:text-[28px] xl:text-3xl 3xl:text-[50px] leading-6 sm:leading-7 xl:leading-[30px] 3xl:leading-[50px];
+  }
+
+  h4 {
+    @apply sm:text-xl xl:text-[22px] 3xl:text-3xl leading-4 sm:leading-5 xl:leading-[22px] 3xl:leading-[30px];
+  }
+
+  h5 {
+    @apply text-sm sm:text-[17px] xl:text-[19px] 3xl:text-[26px] leading-[14px] sm:leading-[17px] xl:leading-[19px] 3xl:leading-[26px];
+  }
+
+  button {
+    @apply text-xs sm:text-[13px] xl:text-sm 3xl:text-lg;
+  }
+}
+
+.container {
+  @apply max-w-full md:max-w-[784px] xl:max-w-[1184px] 3xl:max-w-[1784px] w-full mx-auto px-30px;
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.2s ease-in-out forwards,
+    scaleOut 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.no-scroll::-webkit-scrollbar {
+  @apply size-0;
+}
+
+.section-top-padding {
+  @apply pt-[60px] sm:pt-20 lg:pt-[120px] 3xl:pt-40;
+}
+
+.section-space {
+  @apply space-y-30px sm:space-y-10 xl:space-y-12 3xl:space-y-16;
+}
+
+/* Overall scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Thumb (scroll indicator) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 6px; /* Rounded edges */
+  border: 2px solid transparent; /* Add space around thumb */
+  background-clip: padding-box; /* Prevent color overflow */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change color on hover */
+}
+
+/* Track (scrollbar background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 6px; /* Rounded edges */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #e1e1e1; /* Change track color on hover */
+}
